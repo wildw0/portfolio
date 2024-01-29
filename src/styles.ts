@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components'
+// import {Theme } from '.thmes/dark' em caso de erro
 
 const EstiloGLobal = createGlobalStyle`
 * {
@@ -11,6 +12,7 @@ const EstiloGLobal = createGlobalStyle`
 body {
   padding-top: 80px;
   padding-bottom: 80px;
+  background-color: ${(props) => props.theme.corDeFundo};
 
   @media (max-width: 768px) {
     padding-top: 16px;
